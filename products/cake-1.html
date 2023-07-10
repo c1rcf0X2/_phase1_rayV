@@ -12,21 +12,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="../assets/css/style.css">
 
 </head>
 <style>
     .top-row {
         /* border: 1px solid lightsalmon; */
-        margin-top: 100px;
+        margin-top: 200px;
     }
 </style>
 
 <body>
     <div class="container-fluid">
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-md navbar fixed-top bg-info navbar-dark"> <!--"justify-content-center"-->
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar fixed-top navbar-dark"> <!--"justify-content-center"-->
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <span>
@@ -81,123 +80,122 @@
                             </div>
                         </ul>
                     </div>
-                    <span class="navbar-text" id="total_price">MY CART</span>
+                    <div class="cart">
+                        <div class="cartAmount">0.00
+                        </div>
+                        <div class="cartNumItems">0
+                        </div>
+                        <div><i class="bi bi-cart3"></i></div>
+                    </div>
                 </div>
             </nav>
         </div>
     </div>
 
-    <div class="container my-container">
-        <div class="row g-3 top-row" id="myRow">
-            <div class="col-12 col-lg-md-6 col-lg-6 my-col">
-                <a href="#" class="btn stretched-link">
-                    <img src="../assets/images/cake-1.jpg" class="mx-auto d-block" style="width:100%">
-                </a>
-            </div>
-            <div class="col-12 col-lg-md-6 col-lg-6 my-col">
-                <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
-                    <h5 class="card-title">Cake-1</h5>
-                    <h5 class="price">$24.00</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio sapiente unde
-                        est, dignissimos assumenda aspernatur laborum sed a soluta quisquam corrupti, debitis aliquid
-                        reiciendis repudiandae quae quod impedit ducimus qui.</p>
-                </div>
-
-                <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-4">
-                    <h5>Enter Quantity</h5>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <button class="btn btn-outline-success btn-sm" type="button" id="addItem">+</button>
-                        </div>
-                        <input type="text" style="text-align:center" class="form-control form-control-sm" placeholder
-                            value="0">
-
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-danger btn-sm" type="submit" id="subtractItem">-</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
-                    <label class="medium font-weight-bold text-uppercase mt-1">Total Price:</label>
-                    <div class="input-group mb-3">
-
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">$</span>
-                        </div>
-                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                        <div class="input-group-append">
-                            <span class="input-group-text">.00</span>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
-                    <a href="#myModal" data-toggle="modal" class="text-decoration-none">
-                        <button class="btn btn-info btn-md btn-block" type="button" name="add_bag" id="addtobag">Add to
-                            Cart</button>
-                    </a>
-                    <a href="../index.html" class="text-decoration-none"><button
-                            class="btn btn-dark btn-md btn-block mt-2 mb-2" type="button">Back
-                            to Menu</button></a>
-
-
-
-                </div>
-            </div>
+    <!-- <div class="container my-container"> -->
+    <div class="row g-5 top-row" id="myRow">
+        <div class="col-12 col-lg-md-6 col-lg-6 my-col">
+            <a href="#" class="btn stretched-link">
+                <img src="../assets/images/cake-1.jpg" class="mx-auto d-block" style="width:100%">
+            </a>
         </div>
-
-
-       <div class="modal fade show" id="myModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-
-            <!-- Modal Header -->
-            <div class="modal-header" style="text-align: center">
-                <h4 class="modal-title">Enter your CakeHunt Account Information</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="col-12 col-lg-md-6 col-lg-6 my-col">
+            <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
+                <h5 class="card-title">Cake-1</h5>
+                <h5 class="price">$24.00</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio sapiente unde
+                    est, dignissimos assumenda aspernatur laborum sed a soluta quisquam corrupti, debitis aliquid
+                    reiciendis repudiandae quae quod impedit ducimus qui.</p>
             </div>
 
-            <!-- Modal body -->
-            <div class="modal-body">
-                <form>
+            <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-4">
+                <h5>Enter Quantity</h5>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-success btn-sm" type="button" id="addItem">+</button>
+                    </div>
+                    <input type="text" style="text-align:center" class="form-control form-control-sm" placeholder
+                        value="0">
 
-                    <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control form-control-sm text-center" name="email"
-                                required="" placeholder="Email Address">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control form-control-sm text-center" name="password"
-                                required="" placeholder="Password">
-                        </div>
-                        <div class="col-12 mt-3">
-                            <span class="small font-weight-bold">Forgot your Password? <a href="#"
-                                    class="font-weight-normal" type="button">Click here</a></span>
-                        </div>
-                        <div class="col-12 mt-3">
-                            <input type="hidden" value="XXX" name="curr_url">
-                            <button type="submit" class="btn btn-sm btn-block btn-login">Login</button>
-                        </div>
-                        <div class="col-12 mt-3">
-                            <a href="#">
-                                <button type="button" class="btn btn-sm btn-block btn-register">Register
-                                    Here</button>
-                            </a>
-                        </div>
-                        <div class="col-12 mt-3">
-                            <a href="#">
-                                <button type="button" class="btn btn-sm btn-block btn-register">Order as
-                                    Guest</button>
-                            </a>
-                        </div>
-                </form>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-danger btn-sm" type="submit" id="subtractItem">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
+                <label class="medium font-weight-bold text-uppercase mt-1">Total Price:</label>
+                <div class="input-group mb-3">
+
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
+                <a href="#myModal" data-toggle="modal" class="text-decoration-none">
+                    <button class="btn btn-info btn-md btn-block" type="button" name="add_bag" id="addtobag">Add to
+                        Cart</button>
+                </a>
+                <a href="../index.html" class="text-decoration-none"><button
+                        class="btn btn-dark btn-md btn-block mt-2 mb-2" type="button">Back
+                        to Menu</button></a>
             </div>
         </div>
     </div>
-</div>
+    <div class="modal fade show" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
 
+                <!-- Modal Header -->
+                <div class="modal-header" style="text-align: center">
+                    <h4 class="modal-title">Enter your CakeHunt Account Information</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
 
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form>
+
+                        <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control form-control-sm text-center" name="email"
+                                    required="" placeholder="Email Address">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control form-control-sm text-center" name="password"
+                                    required="" placeholder="Password">
+                            </div>
+                            <div class="col-12 mt-3">
+                                <span class="small font-weight-bold">Forgot your Password? <a href="#"
+                                        class="font-weight-normal" type="button">Click here</a></span>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <input type="hidden" value="XXX" name="curr_url">
+                                <button type="submit" class="btn btn-sm btn-block btn-login">Login</button>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <a href="#">
+                                    <button type="button" class="btn btn-sm btn-block btn-register">Register
+                                        Here</button>
+                                </a>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <a href="#">
+                                    <button type="button" class="btn btn-sm btn-block btn-register">Order as
+                                        Guest</button>
+                                </a>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- </div>    -->
 </body>
 
 </html>
