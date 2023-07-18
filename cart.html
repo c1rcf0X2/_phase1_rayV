@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+
+<body>
+    <div class="container-fluid">
+        <a href="index.html">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar fixed-top  navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand">
+                            <span>
+                                <h4>
+                                    <h1 class="brandname">CakeHunt</h1>
+                                </h4>
+                            </span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <div class="navbar-nav topnav-right">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="index.html">HOME</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                            href="#">MENU</a>
+                                        <div class="dropdown-menu" style="text-align:center"
+                                            aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="products/cake-1.html">Cake-1</a>
+                                            <a class="dropdown-item" href="products/cake-2.html">Cake-2</a>
+                                            <a class="dropdown-item" href="products/cake-3.html">Cake-3</a>
+                                            <a class="dropdown-item" href="products/cake-4.html">Cake-4</a>
+                                            <a class="dropdown-item" href="products/cake-5.html">Cake-5</a>
+                                            <a class="dropdown-item" href="products/cake-6.html">Cake-6</a>
+                                            <a class="dropdown-item" href="products/cake-7.html">Cake-7</a>
+                                            <a class="dropdown-item" href="products/cake-8.html">Cake-8</a>
+                                            <a class="dropdown-item" href="products/cake-9.html">Cake-9</a>
+                                            <a class="dropdown-item" href="products/cake-10.html">Cake-10</a>
+                                            <a class="dropdown-item" href="products/cake-11.html">Cake-11</a>
+                                            <a class="dropdown-item" href="products/cake-12.html">Cake-12</a>
+                                            <a class="dropdown-item" href="products/cake-13.html">Cake-13</a>
+                                            <a class="dropdown-item" href="products/cake-14.html">Cake-14</a>
+                                            <a class="dropdown-item" href="products/cake-15.html">Cake-15</a>
+                                            <a class="dropdown-item" href="products/cake-16.html">Cake-16</a>
+                                            <div class="dropdown-divider"></div> <a class="dropdown-item" href="#">Home
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#myModal" data-toggle="modal">ORDER NOW</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">CONTACT</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <a href="cart.html">
+                            <div class="cart">
+                                <div id="cartQuantity" class="cartQuantity">0
+                                </div>
+                                <div><i class="bi bi-cart3"></i></div>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </a>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-md-center">
+            <!-- <h1>C A R T</h1> -->
+            <div id="label" class="text-center"></div>
+
+            <div class="cart-basket" id="cart-basket"></div>
+        </div>
+    </div>
+</body>
+<script src="src/Data.js"></script>
+<script src="src/cart.js"></script>
+<!-- <script>
+let cakeList = document.getElementById("cakeList");
+
+//let basketCart = JSON.parse(localStorage.getItem("data")) || [];   
+calcCartQuantity();
+</script>  -->
+<!--<script src="src/main.js"></script>-->
+
+</html>
