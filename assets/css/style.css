@@ -33,7 +33,11 @@ a{
     margin-right:auto;
     height:300px;
     gap:10px;
-}     
+}  
+
+.cart-basket{
+    margin-top: 150px;
+}
 
 .my-cart{
     text-align: center;
@@ -85,11 +89,11 @@ a{
 }  
 
 
-.top-row{
- 
+.top-row{ 
     margin-top: 150px;
     text-align: center;
 }
+
 .row{
     display: flex;
     flex-flow: wrap;
@@ -175,3 +179,61 @@ a{
 .cart-heading{
     margin-top: 115px;
 };
+
+.cart-item{
+    margin-top:400px;
+}
+
+.bi-x-square{
+    color: red;
+    font-weight: bold;
+    float: right;
+    position:relative;
+    margin-left: 10px;
+}
+
+.cart-basket{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 15px;
+ }
+
+ .cart-item{
+   border: 2px solid  #005f73;
+   border-radius: 3px;
+   display: flex;
+   
+ }
+
+ .title-price-x{
+    width: 200px;
+    /* display: flex; */
+    align-items:flex-end;
+       /* border: 2px solid red; */
+       margin-left: 8px;
+ }
+ .searchName{
+    font-size: 15px;
+    font-weight: bold;
+    display:flex'
+ }
+ .cart-buttons{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    gap:4px;
+    margin-left:8px;  
+    text-align: center;  
+    margin-bottom: 4px; 
+    /* border: 2px solid red;  */
+    margin-top: 50px;;
+    font-size: 15px;
+
+}
+.searchPrice{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+}

@@ -10,10 +10,11 @@ let basketCart = JSON.parse(localStorage.getItem("data")) || [];
         return ` 
                                           
           <div id = product-id-${id} class="card" style="width:250px;>
-            <a href="${img2}" >
+            <a href="${img2}">
                 <img src=${img} class="mx-auto d-block" style="width:100%">
             </a>
-            <div class="card-body" style="text-align:center">
+            
+             <dittv class="card-body" style="text-align:center">
                 <h5 class="card-title">${name}</h5>
                 <h5 class="price">$ ${price}</h5>
                 <p class="card-text">${desc}</p>
@@ -23,9 +24,7 @@ let basketCart = JSON.parse(localStorage.getItem("data")) || [];
                       <i onclick="increment(${id})" class="bi bi-caret-right-square"></i>                   
                 </div>
               </div>    
-          </div>  
-                                  
-
+          </div>                                
      `
     }).join(""));
  };
@@ -97,6 +96,6 @@ localStorage.setItem("data",JSON.stringify(basketCart));
  let calcCartQuantity=()=>{
   let cartIcon = document.getElementById("cartQuantity");
   cartIcon.innerHTML = basketCart.map((x) =>x.item).reduce((x,y) =>x+y,0 );
- };
+ };  
 
  calcCartQuantity();  //updates the cart when increment & decrement are active
