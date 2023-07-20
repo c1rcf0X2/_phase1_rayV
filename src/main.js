@@ -93,7 +93,7 @@ localStorage.setItem("data",JSON.stringify(basketCart));
 };
 
  
- let calcCartQuantity=()=>{
+ let calcCartQuantity = () => {
   let cartIcon = document.getElementById("cartQuantity");
   cartIcon.innerHTML = basketCart.map((x) =>x.item).reduce((x,y) =>x+y,0 );
  };  
